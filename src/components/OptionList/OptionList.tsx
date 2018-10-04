@@ -4,7 +4,9 @@ import {createUniqueIDFactory} from '@shopify/javascript-utilities/other';
 import {withAppProvider, WithAppProviderProps} from '../AppProvider';
 
 import {Option} from './components';
-import {IconProps, ThumbnailProps, AvatarProps} from '..';
+import {Props as IconProps} from '../Icon';
+import {Props as AvatarProps} from '../Avatar';
+import {Props as ThumbnailProps} from '../Thumbnail';
 import {arraysAreEqual} from '../../utilities/arrays';
 
 import * as styles from './OptionList.scss';

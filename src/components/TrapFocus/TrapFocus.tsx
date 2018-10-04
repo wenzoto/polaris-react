@@ -7,7 +7,8 @@ import {
   focusLastFocusableNode,
 } from '@shopify/javascript-utilities/focus';
 
-import {EventListener, Focus} from '../../components';
+import EventListener from '../../components/EventListener';
+import Focus from '../../components/Focus';
 
 export interface Props {
   trapping?: boolean;

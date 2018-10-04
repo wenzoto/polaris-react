@@ -3,7 +3,8 @@ import * as React from 'react';
 import {classNames} from '@shopify/react-utilities/styles';
 import {autobind, memoize} from '@shopify/javascript-utilities/decorators';
 import {createUniqueIDFactory} from '@shopify/javascript-utilities/other';
-import {Collapsible, Icon, IconProps} from '../../../../components';
+import Collapsible from '../../../Collapsible';
+import Icon, {Props as IconProps} from '../../../Icon';
 import {contextTypes} from '../../types';
 
 import {ellipsis} from '../../../../icons';

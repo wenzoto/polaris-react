@@ -5,7 +5,10 @@ import {autobind, memoize} from '@shopify/javascript-utilities/decorators';
 import {navigationBarCollapsed} from '../../../../utilities/breakpoints';
 
 import {Secondary} from './components';
-import {Icon, IconProps, UnstyledLink, Badge} from '../../../../components';
+
+import Badge from '../../../Badge';
+import Icon, {Props as IconProps} from '../../../Icon';
+import UnstyledLink from '../../../UnstyledLink';
 import {Context, contextTypes} from '../../types';
 
 import * as styles from '../../Navigation.scss';

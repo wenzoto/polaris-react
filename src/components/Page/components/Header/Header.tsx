@@ -1,17 +1,13 @@
 import * as React from 'react';
 import {autobind} from '@shopify/javascript-utilities/decorators';
 import {classNames} from '@shopify/react-utilities/styles';
-import {
-  Button,
-  buttonsFrom,
-  Breadcrumbs,
-  Pagination,
-  DisplayText,
-  Popover,
-  ActionList,
-  BreadcrumbsProps,
-} from '../../../../components';
-import {PaginationDescriptor} from '../../../Pagination';
+
+import ActionList from '../../../ActionList';
+import Button, {buttonsFrom} from '../../../Button';
+import Breadcrumbs, {Props as BreadcrumbsProps} from '../../../Breadcrumbs';
+import DisplayText from '../../../DisplayText';
+import Pagination, {PaginationDescriptor} from '../../../Pagination';
+import Popover from '../../../Popover';
 import {
   DisableableAction,
   LoadableAction,

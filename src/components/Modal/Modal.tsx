@@ -11,7 +11,10 @@ import {Modal as AppBridgeModal} from '@shopify/app-bridge/actions';
 import {transformActions} from '../../utilities/app-bridge-transformers';
 import {contentContextTypes} from '../../types';
 import {withAppProvider, WithAppProviderProps} from '../AppProvider';
-import {Scrollable, Spinner, Portal, Backdrop} from '../../components';
+import Backdrop from '../Backdrop';
+import Scrollable from '../Scrollable';
+import Spinner from '../Spinner';
+import Portal from '../Portal';
 import memoizedBind from '../../utilities/memoized-bind';
 import {
   CloseButton,

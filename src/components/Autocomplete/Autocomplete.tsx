@@ -4,8 +4,9 @@ import {withAppProvider, WithAppProviderProps} from '../AppProvider';
 import {ComboBox} from './components';
 import {PreferredPosition} from '../PositionedOverlay';
 import {OptionDescriptor} from '../OptionList';
+import Spinner from '../Spinner';
+import {Props as TextFieldProps} from '../TextField';
 import {ActionListItemDescriptor} from '../../types';
-import {TextFieldProps, Spinner} from '../../components';
 
 import * as styles from './Autocomplete.scss';
 

@@ -1,11 +1,14 @@
 import * as React from 'react';
-
 import {autobind} from '@shopify/javascript-utilities/decorators';
-import {Button, Image, Stack, ContextualSaveBarProps} from '../../..';
-import {DiscardConfirmationModal} from './components';
+
 import {withAppProvider, WithAppProviderProps} from '../../../AppProvider';
+import Button from '../../../Button';
+import {ContextualSaveBarProps} from '../../../ContextualSaveBar';
+import Image from '../../../Image';
+import Stack from '../../../Stack';
 import {getWidth} from '../../../../utilities/getWidth';
 
+import {DiscardConfirmationModal} from './components';
 import * as styles from './ContextualSaveBar.scss';
 
 export type Props = ContextualSaveBarProps;
