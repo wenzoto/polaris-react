@@ -44,6 +44,7 @@ The autocomplete component is an input field that provides selectable suggestion
 - Added `onPortalCreated` prop to `Portal`
 - Improved consistency of `Badge` styling
 - Explicitly specifying `list-style` on `List`
+- Added `primaryAction` prop to `SkeletonPage` ([#488](https://github.com/Shopify/polaris-react/pull/488)) (thanks [@calebstdenis](https://github.com/calebstdenis) for the [original request](https://github.com/Shopify/polaris/issues/443))
 
 ### Bug fixes
 

@@ -32,6 +32,35 @@ $action-text-spacing: rem(24px);
   margin-bottom: (-1 * spacing(extra-tight));
 }
 
+.TitleAndPrimaryAction {
+  display: flex;
+
+  @include page-content-when-partially-condensed {
+    display: block;
+  }
+}
+
+.Title {
+  flex: 1 1 0%;
+}
+
+.PrimaryAction {
+  align-self: stretch;
+  align-items: center;
+  margin-right: spacing(extra-tight);
+  margin-bottom: (-1 * spacing(extra-tight));
+
+  > * {
+    height: rem(36px);
+    min-width: rem(100px);
+  }
+
+  @include page-content-when-partially-condensed {
+    margin-top: spacing();
+    margin-bottom: (-1 * spacing(tight));
+  }
+}
+
 .Actions {
   @include skeleton-page-secondary-actions-layout;
 }
@@ -44,7 +73,7 @@ $action-text-spacing: rem(24px);
   padding-right: $action-text-spacing;
   margin-top: (-1 * spacing(extra-tight));
   margin-bottom: (-1 * spacing(extra-tight));
-  padding-top: rem(16px);
+  padding-top: spacing();
 
   &:first-child {
     padding-right: 0;
