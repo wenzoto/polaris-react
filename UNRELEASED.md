@@ -95,6 +95,7 @@ The autocomplete component is an input field that provides selectable suggestion
 - Added examples for iOS and Android list
 - Clarified placement and usage of `Banner`
 - Added an explanation to `Modal` about why it can't be closed by clicking outside the modal and should only be closed by clicking `X` or `Cancel`
+- Updated documentation links to match the new style guide link structure ([#478](https://github.com/Shopify/polaris-react/pull/478))
 
 ### Development workflow
 
