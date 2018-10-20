@@ -53,15 +53,6 @@ export default function sewingKitConfig(
           '!src/**/*.test.{ts,tsx}',
         ];
 
-        // Can be removed once SK is updated to latest ts-jest
-        config.transform = {
-          ...config.transform,
-          '\\.tsx?$': 'ts-jest',
-        };
-
-        // Can be removed once SK is updated to latest ts-jest
-        delete config.globals['ts-jest'].useBabelrc;
-
         return config;
       }),
     ],

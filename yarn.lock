@@ -303,10 +303,10 @@
     classnames "^2.2.5"
     core-js "^2.5.6"
 
-"@shopify/sewing-kit@^0.60.0":
-  version "0.60.0"
-  resolved "https://registry.yarnpkg.com/@shopify/sewing-kit/-/sewing-kit-0.60.0.tgz#6fc6a6c78febe8cf9e60281e18876edee05998f2"
-  integrity sha512-zFigechcosZx030ajWYTsRgxFaTTfQ+nTTX/y9QVL0++3mtTONiB6UmWiEdFPsxR8wEIQ5OrfUrQ5427RgrMLQ==
+"@shopify/sewing-kit@0.60.2-update-ts-jest-beta.2":
+  version "0.60.2-update-ts-jest-beta.2"
+  resolved "https://registry.yarnpkg.com/@shopify/sewing-kit/-/sewing-kit-0.60.2-update-ts-jest-beta.2.tgz#da12b1cb6a9cf5ea33373fd0a48e4f6813fa4157"
+  integrity sha512-btPqN6iYcx3ZeJ13fo2hetTNknhli/h4oQMjBCNKKCZzC4jmt0WWuGfMUelS2AHbgroCqYJf0lg8Q7b6WPV6Pw==
   dependencies:
     "@shopify/images" "^1.1.4"
     "@types/jest" "^23.3.1"
@@ -352,7 +352,7 @@
     loader-utils "^1.1.0"
     lodash "^4.17.5"
     lodash-webpack-plugin "^0.11.5"
-    mini-css-extract-plugin "^0.4.1"
+    mini-css-extract-plugin "^0.4.4"
     node-object-hash "^1.4.1"
     node-sass "^4.9.1"
     open-in-editor "^2.2.0"
@@ -376,7 +376,7 @@
     stylelint-config-shopify "^7.0.2"
     svgo "^1.0.5"
     temp "^0.8.3"
-    ts-jest "^21.2.3"
+    ts-jest "~23.10.4"
     ts-loader "^4.4.1"
     uglifyjs-webpack-plugin "^1.2.7"
     url-loader "^1.0.1"
@@ -384,9 +384,10 @@
     webpack-bundle-analyzer "^2.13.1"
     webpack-dev-middleware "^3.0.1"
     webpack-dev-server "^3.1.5"
+    webpack-filter-warnings-plugin "^1.2.0"
     webpack-hot-middleware "^2.22.2"
     webpack-node-externals "^1.7.2"
-    webpack-plugin-hash-output "npm:webpack-plugin-hash-output-mini-css@3.1.0-beta.1"
+    webpack-plugin-hash-output "npm:webpack-plugin-hash-output-mini-css@3.1.0-beta.4"
     whatwg-url "^6.1.0"
     yargs "^12.0.1"
 
@@ -10313,7 +10314,7 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
-mini-css-extract-plugin@^0.4.1:
+mini-css-extract-plugin@^0.4.4:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.4.4.tgz#c10410a004951bd3cedac1da69053940fccb625d"
   integrity sha512-o+Jm+ocb0asEngdM6FsZWtZsRzA8koFUudIDwYUfl94M3PejPHG7Vopw5hN9V8WsMkSFpm3tZP3Fesz89EyrfQ==
@@ -15285,7 +15286,7 @@ tryer@^1.0.0:
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.0.tgz#027b69fa823225e551cace3ef03b11f6ab37c1d7"
   integrity sha1-Antp+oIyJeVRys4+8DsR9qs3wdc=
 
-ts-jest@^21.2.3, ts-jest@~23.10.4:
+ts-jest@~23.10.4:
   version "23.10.4"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-23.10.4.tgz#a7a953f55c9165bcaa90ff91014a178e87fe0df8"
   integrity sha512-oV/wBwGUS7olSk/9yWMiSIJWbz5xO4zhftnY3gwv6s4SMg6WHF1m8XZNBvQOKQRiTAexZ9754Z13dxBq3Zgssw==
@@ -16120,6 +16121,11 @@ webpack-dev-server@^3.1.5:
     webpack-log "^2.0.0"
     yargs "12.0.2"
 
+webpack-filter-warnings-plugin@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-filter-warnings-plugin/-/webpack-filter-warnings-plugin-1.2.0.tgz#ffddc536be126c3cbd7abf7ab6acc7a7004e7262"
+  integrity sha512-gmSWFcnxr60v/euYp4HHFjVjQ5HzsaCb/AYUeFTvWd0EIqamIEojOR4aUpV3nqMoGZKjM+OboSrLWo1LxQ+sgg==
+
 webpack-hot-middleware@^2.22.2:
   version "2.24.3"
   resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.24.3.tgz#5bb76259a8fc0d97463ab517640ba91d3382d4a6"
@@ -16143,10 +16149,10 @@ webpack-node-externals@^1.7.2:
   resolved "https://registry.yarnpkg.com/webpack-node-externals/-/webpack-node-externals-1.7.2.tgz#6e1ee79ac67c070402ba700ef033a9b8d52ac4e3"
   integrity sha512-ajerHZ+BJKeCLviLUUmnyd5B4RavLF76uv3cs6KNuO8W+HuQaEs0y0L7o40NQxdPy5w0pcv8Ew7yPUAQG0UdCg==
 
-"webpack-plugin-hash-output@npm:webpack-plugin-hash-output-mini-css@3.1.0-beta.1":
-  version "3.1.0-beta.1"
-  resolved "https://registry.yarnpkg.com/webpack-plugin-hash-output-mini-css/-/webpack-plugin-hash-output-mini-css-3.1.0-beta.1.tgz#099e1a1f664eb977cdc276643d3f6dc27f0485a7"
-  integrity sha1-CZ4aH2ZOuXfNwnZkPT9twn8Ehac=
+"webpack-plugin-hash-output@npm:webpack-plugin-hash-output-mini-css@3.1.0-beta.4":
+  version "3.1.0-beta.4"
+  resolved "https://registry.yarnpkg.com/webpack-plugin-hash-output-mini-css/-/webpack-plugin-hash-output-mini-css-3.1.0-beta.4.tgz#23de8a600fd4c49a7b5bd047d9f353ce1d684928"
+  integrity sha512-B1jYT2hYVVT5EM7jvNJpYTHP58ZpBPQryIHO0hwzL5T4emXnJ3u3ipPqfnsis8X0yfRU+OSiUSByp6HWUFv94w==
 
 webpack-sources@^1.0.1:
   version "1.0.1"
