@@ -63,6 +63,7 @@ describe('<Autocomplete/>', () => {
             id: 'ComboBox3-0',
           }}
           onSelect={handleOnSelect}
+          renderEmptyState={renderEmptyState}
         />,
       );
 
@@ -83,6 +84,9 @@ describe('<Autocomplete/>', () => {
         actionBefore,
       );
       expect(autocomplete.find(ComboBox).prop('onSelect')).toBe(handleOnSelect);
+      expect(autocomplete.find(ComboBox).prop('renderEmptyState')).toBe(
+        renderEmptyState,
+      );
     });
   });
 
@@ -104,6 +108,10 @@ describe('<Autocomplete/>', () => {
 
   function renderTextField() {
     return <Autocomplete.TextField label="" onChange={noop} />;
+  }
+
+  function renderEmptyState() {
+    return <span>No results</span>;
   }
 
   function handleOnSelect(updatedSelection: string[]) {
