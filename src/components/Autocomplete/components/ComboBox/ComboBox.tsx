@@ -336,7 +336,9 @@ export default class ComboBox extends React.PureComponent<Props, State> {
 
   @autobind
   private handleBlur() {
-    this.setState({popoverActive: false});
+    this.setState({popoverActive: false}, () => {
+      this.resetVisuallySelectedOptions();
+    });
   }
 
   @autobind
@@ -470,19 +472,22 @@ export default class ComboBox extends React.PureComponent<Props, State> {
 
   @autobind
   private selectOptionAtIndex(newOptionIndex: number) {
-    const {navigableOptions} = this.state;
+    const {navigableOptions, selectedOption} = this.state;
     if (!navigableOptions || navigableOptions.length === 0) {
       return;
     }
     const newSelectedOption = navigableOptions[newOptionIndex];
-    const oldSelectedOption = this.state.selectedOption;
+    const oldSelectedOption = selectedOption;
 
-    this.setState({
-      selectedOption: newSelectedOption,
-      selectedIndex: newOptionIndex,
-    });
-
-    this.visuallyUpdateSelectedOption(newSelectedOption, oldSelectedOption);
+    this.setState(
+      {
+        selectedOption: newSelectedOption,
+        selectedIndex: newOptionIndex,
+      },
+      () => {
+        this.visuallyUpdateSelectedOption(newSelectedOption, oldSelectedOption);
+      },
+    );
   }
 
   @autobind
