@@ -42,7 +42,7 @@ describe('<SkeletonPage />', () => {
       expect(displayText.contains('Products')).toBe(true);
     });
 
-    it('passes large to thesize prop and passes h1 to the element prop of DisplayText', () => {
+    it('passes large to the size prop and passes h1 to the element prop of DisplayText', () => {
       const skeletonPage = mountWithAppProvider(
         <SkeletonPage title="Products" />,
       );
